@@ -1,3 +1,8 @@
+@media (max-width: 1200px){
+  .container {
+      min-width: 960px;
+  }
+}
 .accordion {
   background-color: #eee;
   color: #444;
@@ -10,7 +15,9 @@
   font-size: 15px;
   transition: 0.4s;
 }
-
+h2{
+  text-align: center;
+}
 .accordion:after {
   content: '\002B';
   color: #777;
@@ -28,7 +35,19 @@
 .clicked::after{
   content: "\2212";
 }
-
+.click:hover{
+  background-color: #ccc;
+} 
+.clicks:hover{
+  background-color: #ccc; 
+}
+.accordion:hover {
+  background-color: #ccc; 
+}
+button:focus {
+  outline: none;
+  
+}
 .paragraph{
   display: none;
 }
@@ -40,4 +59,7 @@ select{
 }
 select:focus-visible{
   outline: none !important;
+}
+select:hover{
+  background-color: #ccc; 
 }
